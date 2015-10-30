@@ -1,0 +1,38 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteor Foundation 5 Demo App</title>
+</head>
+
+<template name="mainLayout">
+    <div class="off-canvas-wrap docs-wrap" data-offcanvas>
+        <div class="inner-wrap">
+            <nav class="tab-bar">
+                <section class="middle tab-bar-section">
+                    <h1 class="title">
+                        <a href="/">Meteor Foundation 5 Demo App</a>
+                    </h1>
+                </section>
+                <section class="right-small">
+                    <a class="right-off-canvas-toggle menu-icon"><span></span></a>
+                </section>
+            </nav>
+            <aside class="right-off-canvas-menu">
+                {{> menu}}
+            </aside>
+            <section class="main-section">
+                <div class="small-12 small-centered medium-10 medium-centered columns">
+
+                    <hr>
+                    <h1 id="kitchen-sink">Kitchen sink</h1>
+                    <h5 class="subheader">This page includes every single Foundation element so that we can make sure things work together smoothly.</h5>
+                    <hr>
+
+                    {{> Template.dynamic template=contentTemplate}}
+
+                </div>
+            </section>
+            <a class="exit-off-canvas"></a>
+        </div>
+    </div>
+</template>
