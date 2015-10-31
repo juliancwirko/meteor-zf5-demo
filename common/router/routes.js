@@ -26,6 +26,11 @@ FlowRouter.route('/alerts', {
         BlazeLayout.render('mainLayout', {contentTemplate: 'alerts'});
     }
 });
+FlowRouter.route('/grid', {
+    action() {
+        BlazeLayout.render('mainLayout', {contentTemplate: 'grid'});
+    }
+});
 FlowRouter.route('/block-grid', {
     action() {
         BlazeLayout.render('mainLayout', {contentTemplate: 'blockGrid'});
@@ -144,5 +149,20 @@ FlowRouter.route('/top-bar', {
 FlowRouter.route('/visibility-classes', {
     action() {
         BlazeLayout.render('mainLayout', {contentTemplate: 'visibilityClasses'});
+    }
+});
+FlowRouter.route('/interchange', {
+    action() {
+        BlazeLayout.render('mainLayout', {contentTemplate: 'interchange'});
+    }
+});
+FlowRouter.route('/abide', {
+    action() {
+        BlazeLayout.render('mainLayout', {contentTemplate: 'abide'});
+    }
+});
+FlowRouter.route('/equalizer', {
+    action() {
+        BlazeLayout.render('mainLayout', {contentTemplate: 'equalizer'});
     }
 });
